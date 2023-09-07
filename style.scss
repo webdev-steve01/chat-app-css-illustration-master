@@ -1,0 +1,273 @@
+// * i have to admit the css is kinda unorganized, this was the most challenging project i've done so far.
+
+
+*, *::after,*::before{box-sizing: border-box}
+
+// *colors
+$highlight : 1px solid transparent;
+$topUi:hsl(276, 100%, 81%);
+$rightChat:hsl(271, 15%, 43%);
+$leftChat:hsl(276, 55%, 52%);
+$placeholder:hsl(206, 6%, 79%);
+$mainHeading:hsl(271, 36%, 24%);
+$paragraphs: hsl(270, 7%, 64%);
+$appBackground:hsl(270, 20%, 96%);
+$submit:hsl(271, 36%, 24%);
+$radio:hsl(289, 100%, 72%);
+
+// * gradients
+$gradientMagenta:hsl(293, 100%, 63%);
+$gradientViolet:hsl(264, 100%, 61%);
+
+
+html{
+  box-sizing: border-box;
+}
+// *constants
+body{
+  background-color: $appBackground;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+img{width: 100%;}
+
+.background{
+  border: $highlight;
+  max-width: 400px;
+  width: 70%;
+  height: 90%;
+  border-radius: 200px;
+  position: absolute;
+  margin-left:-50px ;
+  margin-top: -100px;
+  background: linear-gradient(to top, $gradientViolet 60%, $gradientMagenta);
+  z-index: -1;
+
+  .container{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    
+  }
+
+
+}
+  
+.phone{
+animation: ping 700ms ease 0s 1 normal;
+background-color: white;
+position: relative;
+border-radius: 10px;
+width: 250px;
+border: $highlight;
+margin: 20px auto;
+padding: .5em;
+
+.phone--content{
+background-color: $appBackground;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: $highlight;
+
+  #price{
+    color: white;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, $gradientMagenta 30%, $gradientViolet);
+
+    .cost{
+      margin-left: auto;
+      margin-right: 10px;
+      font-size: 1.6em;
+      font-weight: 700;
+    }
+  }
+
+  .message--left{
+    border: $highlight;
+    width: 80%;
+    font-size: .7em;
+    padding: .5em;
+    margin: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    color: $leftChat;
+    background-color: $paragraphs;
+    animation: ping 2s ease 0s 1 normal;
+  }
+
+  .right{
+    margin-left: auto;
+    border: $highlight;
+    width: 200px;
+    // margin-right: 0px;
+    // margin-left: ;
+
+    .message--right{
+      border: $highlight;
+      padding: .5em;
+      font-size: .7em;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 15px;
+      margin: 5px;
+      color: $rightChat;
+      background-color: white;
+      -webkit-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+      -moz-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+      box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+      animation: ping 2s ease 0s 1 normal;
+    }
+
+    .dogs{
+      // height: 60px;
+      display: flex;
+      gap: 5px;
+      padding: .5em;
+      justify-content: flex-end;
+      // flex-direction: column;
+      // width: 15 0px;
+      animation: ping 2s ease 0s 1 normal;  
+
+      img{
+        height: 50px;
+        width: 50px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+  
+  .title{
+    background: linear-gradient(to right, $gradientViolet 45%, hsl(293, 100%, 63%));
+    position: inherit;
+    -webkit-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+    -moz-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+    box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+    // &::after{
+    //   transform: translate(-90px, -30px);
+    //   background-color: white;
+    //   content: '';
+    //   width: 125px;
+    //   height: 10px;
+    //   position: relative;
+    //   border: $highlight;
+
+    // }
+      .title--text{
+        width: 100%;
+        font-size: .9em;
+        color: white;
+
+        .smaller{
+          font-size: .5em;
+          color: $placeholder;
+        }
+      }
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    // margin-bottom: 20px;
+    border: $highlight;
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    .back{
+      font-size: 16px;
+      padding: 5px;
+    }
+
+    .image{
+      width: 45px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .menu{
+      margin-right: 20px;
+    }
+  }
+}
+  
+
+.text{
+  border: $highlight;
+  text-align: center;
+  color: $paragraphs;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 300px;
+
+  h1{
+    color: $submit;
+  }
+}
+.input{
+  border: $highlight;
+  border-radius: 50px;
+  padding: .5em;
+  display: flex;
+  gap: 50px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  width: 95%;
+  background-color: white;
+
+  .placeholder{
+    color: $placeholder;
+    font-size: .9em;
+  }
+  .send{
+    // color: white;
+    background-color: $submit;
+    width: 20px;
+    height: 20px;
+    border: $highlight;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+}
+@media screen and (min-width: 1000px){
+  .text{
+    max-width: 600px;
+  }
+}
+
+@keyframes ping {
+  0%{
+    transform: translateY(15px);
+    opacity: 0;
+  }
+    50%{
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  
+    75%{
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

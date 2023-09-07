@@ -1,0 +1,217 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(270, 20%, 96%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.background {
+  border: 1px solid transparent;
+  max-width: 400px;
+  width: 70%;
+  height: 90%;
+  border-radius: 200px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -100px;
+  background: linear-gradient(to top, hsl(264, 100%, 61%) 60%, hsl(293, 100%, 63%));
+  z-index: -1;
+}
+.background .container {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.phone {
+  animation: ping 700ms ease 0s 1 normal;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  width: 250px;
+  border: 1px solid transparent;
+  margin: 20px auto;
+  padding: 0.5em;
+}
+.phone .phone--content {
+  background-color: hsl(270, 20%, 96%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid transparent;
+}
+.phone .phone--content #price {
+  color: white;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, hsl(293, 100%, 63%) 30%, hsl(264, 100%, 61%));
+}
+.phone .phone--content #price .cost {
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+.phone .phone--content .message--left {
+  border: 1px solid transparent;
+  width: 80%;
+  font-size: 0.7em;
+  padding: 0.5em;
+  margin: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0px;
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(270, 7%, 64%);
+  animation: ping 2s ease 0s 1 normal;
+}
+.phone .phone--content .right {
+  margin-left: auto;
+  border: 1px solid transparent;
+  width: 200px;
+}
+.phone .phone--content .right .message--right {
+  border: 1px solid transparent;
+  padding: 0.5em;
+  font-size: 0.7em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+  margin: 5px;
+  color: hsl(271, 15%, 43%);
+  background-color: white;
+  -webkit-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+  -moz-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+  box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+  animation: ping 2s ease 0s 1 normal;
+}
+.phone .phone--content .right .dogs {
+  display: flex;
+  gap: 5px;
+  padding: 0.5em;
+  justify-content: flex-end;
+  animation: ping 2s ease 0s 1 normal;
+}
+.phone .phone--content .right .dogs img {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+}
+.phone .title {
+  background: linear-gradient(to right, hsl(264, 100%, 61%) 45%, hsl(293, 100%, 63%));
+  position: inherit;
+  -webkit-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+  -moz-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+  box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.phone .title .title--text {
+  width: 100%;
+  font-size: 0.9em;
+  color: white;
+}
+.phone .title .title--text .smaller {
+  font-size: 0.5em;
+  color: hsl(206, 6%, 79%);
+}
+.phone .title .back {
+  font-size: 16px;
+  padding: 5px;
+}
+.phone .title .image {
+  width: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.phone .title .menu {
+  margin-right: 20px;
+}
+
+.text {
+  border: 1px solid transparent;
+  text-align: center;
+  color: hsl(270, 7%, 64%);
+  width: 90%;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.text h1 {
+  color: hsl(271, 36%, 24%);
+}
+
+.input {
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 0.5em;
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  width: 95%;
+  background-color: white;
+}
+.input .placeholder {
+  color: hsl(206, 6%, 79%);
+  font-size: 0.9em;
+}
+.input .send {
+  background-color: hsl(271, 36%, 24%);
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .text {
+    max-width: 600px;
+  }
+}
+@keyframes ping {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
