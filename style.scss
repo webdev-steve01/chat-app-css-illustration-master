@@ -55,14 +55,32 @@ img{width: 100%;}
 }
   
 .phone{
-animation: ping 700ms ease 0s 1 normal;
-background-color: white;
-position: relative;
-border-radius: 10px;
-width: 250px;
-border: $highlight;
-margin: 20px auto;
-padding: .5em;
+  position: absolute;
+  animation: ping 700ms ease 0s 1 normal;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  width: 250px;
+  border: $highlight;
+  margin: 20px auto;
+  padding: .5em;
+
+  .top{
+    background-color: white;
+    border-radius: 50px;
+    z-index: 1;
+    position: relative;
+    width: 70px;
+    margin: 0 auto;
+    margin-top: -9px;
+    top:5px;
+    height: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: $submit;
+  }
+
 
 .phone--content{
 background-color: $appBackground;
@@ -97,7 +115,7 @@ background-color: $appBackground;
     border-bottom-left-radius: 0px;
     color: $leftChat;
     background-color: $paragraphs;
-    animation: ping 2s ease 0s infinite normal;
+    animation: ping 2s ease 0s 1 normal;
   }
 
   .right{
@@ -121,7 +139,7 @@ background-color: $appBackground;
       -webkit-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
       -moz-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
       box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
-      animation: ping 2s ease 0s infinite normal;
+      animation: ping 2s ease 0s 1 normal;
     }
 
     .dogs{
@@ -132,7 +150,7 @@ background-color: $appBackground;
       justify-content: flex-end;
       // flex-direction: column;
       // width: 15 0px;
-      animation: ping 2s ease 0s infinite normal;  
+      animation: ping 2s ease 0s 1 normal;  
 
       img{
         height: 50px;
@@ -190,8 +208,9 @@ background-color: $appBackground;
       border-radius: 50%;
       overflow: hidden;
     }
-    .menu{
-      margin-right: 20px;
+    .more{
+      margin-right: 10px;
+      height: 20px;
     }
   }
 }

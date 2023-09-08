@@ -35,6 +35,7 @@ img {
 }
 
 .phone {
+  position: absolute;
   animation: ping 700ms ease 0s 1 normal;
   background-color: white;
   position: relative;
@@ -43,6 +44,21 @@ img {
   border: 1px solid transparent;
   margin: 20px auto;
   padding: 0.5em;
+}
+.phone .top {
+  background-color: white;
+  border-radius: 50px;
+  z-index: 1;
+  position: relative;
+  width: 70px;
+  margin: 0 auto;
+  margin-top: -9px;
+  top: 5px;
+  height: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: hsl(271, 36%, 24%);
 }
 .phone .phone--content {
   background-color: hsl(270, 20%, 96%);
@@ -143,8 +159,9 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
-.phone .title .menu {
-  margin-right: 20px;
+.phone .title .more {
+  margin-right: 10px;
+  height: 20px;
 }
 
 .text {
