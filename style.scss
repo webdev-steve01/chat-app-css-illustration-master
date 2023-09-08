@@ -1,4 +1,4 @@
-// * i have to admit the css is kinda unorganized, this was the most challenging project i've done so far.
+// * i have to admit the scss is kinda unorganized, this was the most challenging project i've done so far.
 
 
 *, *::after,*::before{box-sizing: border-box}
@@ -97,7 +97,7 @@ background-color: $appBackground;
     border-bottom-left-radius: 0px;
     color: $leftChat;
     background-color: $paragraphs;
-    animation: ping 2s ease 0s 1 normal;
+    animation: ping 2s ease 0s infinite normal;
   }
 
   .right{
@@ -121,7 +121,7 @@ background-color: $appBackground;
       -webkit-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
       -moz-box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
       box-shadow: -2px 13.5px 8.5px -3.5px #dddddd;
-      animation: ping 2s ease 0s 1 normal;
+      animation: ping 2s ease 0s infinite normal;
     }
 
     .dogs{
@@ -132,7 +132,7 @@ background-color: $appBackground;
       justify-content: flex-end;
       // flex-direction: column;
       // width: 15 0px;
-      animation: ping 2s ease 0s 1 normal;  
+      animation: ping 2s ease 0s infinite normal;  
 
       img{
         height: 50px;
